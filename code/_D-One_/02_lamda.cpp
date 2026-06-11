@@ -1,3 +1,3 @@
-function<return_type(types)> function_name = [&]( parameters ) -> return_type {
+function<int(int)> f = [&]( int ) -> int {
     
 };

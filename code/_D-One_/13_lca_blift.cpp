@@ -1,8 +1,7 @@
 const int N = 200005;
 const int LOG = 20;
 
-int n;
-cin >> n;
+int n; cin >> n;
 
 vector<vector<int>> adj(n + 1);
 vector<vector<int>> up(n + 1, vector<int>(LOG));

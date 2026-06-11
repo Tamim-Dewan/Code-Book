@@ -15,8 +15,8 @@ while(!q.empty()) {
     }
 }
 
-// bfs on Grid
-// --------------
+//     bfs on Grid
+// -----------------------
 int dx[] = {0, 0, 1, -1};
 int dy[] = {1, -1, 0, 0}; // 4 directions
 
