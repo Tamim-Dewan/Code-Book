@@ -1,0 +1,13 @@
+const ll N=3e6+5;
+// call SIEVE() and PRIMES() in int main()
+vector<bool> sieve(N,true);
+vector<ll> primes;
+vector<ll> mu(N,1);
+void Build_mu(){
+    mu[1]=1;
+    for(auto p:primes){
+        ll sq=p*p;
+        for(ll j=sq;j<N;j+=sq){
+            mu[j]=0;}}
+    for(auto p:primes){
+    for(ll j=p;j<N;j+=p)mu[j]*=-1;}}

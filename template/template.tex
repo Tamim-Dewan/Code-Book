@@ -1,0 +1,85 @@
+\documentclass[10pt, landscape, a4paper,twosided]{extarticle}
+
+\usepackage{fouriernc}
+\usepackage[T1]{fontenc}
+\usepackage{framed}
+\usepackage{makeidx}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[scaled=.78]{DejaVuSansMono}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{listings}
+\usepackage{amsmath}
+\usepackage{verbatim}
+\usepackage{hyperref}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{multicol}
+\usepackage{geometry}
+\usepackage{amssymb,tikz,psfrag,epstopdf}
+\geometry{verbose,landscape,a4paper,tmargin=1.5cm,bmargin=2cm,lmargin=1cm,rmargin=1cm}
+
+\setlength{\parindent}{0pt}
+\newcommand*{\Scale}[2][4]{\scalebox{#1}{$#2$}}%
+
+\setlength{\columnsep}{1.5mm}
+\setlength{\columnseprule}{1pt}
+
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+
+\lstdefinestyle{codebook}{
+  basicstyle=\ttfamily\small,
+  language=C++,
+  keywordstyle=\color{MidnightBlue}\bfseries,
+  commentstyle=\color{ForestGreen}\itshape,
+  stringstyle=\color{BrickRed},
+  numberstyle=\tiny\color{Gray},
+  showspaces=false,
+  showtabs=false,
+  numbersep=6pt,
+  frame=lines,
+  breaklines=true,
+  breakatwhitespace=false,
+  showstringspaces=false,
+  columns=fullflexible,
+  keepspaces=true,
+  tabsize=1
+}
+
+\newcommand{\cpp}[1]{\lstinputlisting[style=codebook]{#1}}
+
+\linespread{0.50}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{1pt}
+\rhead{\thepage}
+\lhead{\textcolor{MidnightBlue}{\textit{\textbf{DU\_Khelowar, University of Dhaka}}}}
+\setlength\headheight{16pt} 
+
+% \rhead{\textcolor{MidnightBlue}{\textit{\textbf{DU\_Resurgence}}}}
+ \chead{ \textcolor{MidnightBlue}{\textbf{\_D-one\_}} | \textcolor{MidnightBlue}{\textbf{2hard2solve}} | \textcolor{MidnightBlue}{\textbf{Faisal821}} }  
+\headsep = 0pt
+\textheight = 7.75in
+\footskip = 16pt
+
+\titlespacing{\section}{0pt}{1.25mm}{1.25mm}
+\titlespacing{\subsection}{0pt}{1.25mm}{1.25mm}
+\titlespacing{\subsubsection}{0pt}{1.25mm}{1.25mm}
+
+\titleformat{\section}
+  {\normalfont\fontsize{10}{15}\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\fontsize{8}{15}\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}
+  {\normalfont\fontsize{8}{15}\bfseries}{\thesubsubsection}{1em}{}
+
+\begin{document}
+\begin{multicols}{2}
+\tableofcontents
+\end{multicols}
+\newpage
+\begin{multicols}{3}
+%\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}

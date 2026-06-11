@@ -1,0 +1,17 @@
+double angledeu(pt a, pt b, pt c){
+    pll ba={b.x-a.x, b.y-a.y};
+    pll bc={b.x-c.x, b.y-c.y};
+    double BA=atan2((double)ba.sc, (double)ba.ft);
+    double BC=atan2((double)bc.sc, (double)bc.ft);
+    double rslt = BA - BC;
+    double rs = (rslt * (double)180.00) / pi;
+    if(rs>=0){
+        if(rs>180.00){
+            return double(360.00-rs);
+        }else{
+            return rs;
+        }
+    }else{
+        return double(rs*(double(-1.00)));
+    }
+}

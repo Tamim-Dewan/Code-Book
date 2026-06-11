@@ -1,0 +1,16 @@
+\begin{itemize}
+    \item $a + b = a \oplus b + 2 \cdot (a \mathbin{\&} b)$
+    \item $a + b = a \mid b + a \mathbin{\&} b$
+    \item $a \oplus b = a \mid b - a \mathbin{\&} b$
+    \item $n \bmod 2^i = n \mathbin{\&} (2^i - 1)$
+    \item The $k$-th bit is set in $x$ iff:
+    \[
+    x \bmod (2^{k+1} - 1) \geq 2^k
+    \]
+    \item Equivalently, $k$-th bit is set iff:
+    \[
+    x \bmod (2^{k+1} - 1) - x \bmod 2^k \neq 0
+    \]
+    (The result will be exactly $2^k$ if set.)
+    \item $1 \oplus 2 \oplus 3 \oplus \cdots \oplus (4k - 1) = 0 \quad \text{for any } k \geq 0$
+\end{itemize}

@@ -1,0 +1,98 @@
+% ==========================================
+% Number Theoretic Formulas (Corrected)
+% ==========================================
+
+\[
+\sum_{k=1}^{n} \frac{1}{\gcd(k,n)}
+= \sum_{d \mid n} \frac{1}{d} \, \varphi\!\left( \frac{n}{d} \right)
+= \frac{1}{n} \sum_{d \mid n} d \, \varphi(d)
+\]
+
+\[
+\sum_{k=1}^{n} \frac{k}{\gcd(k,n)}
+= 1 + \frac{1}{2} \sum_{\substack{d \mid n \\ d>1}} d \, \varphi(d)
+\]
+
+\[
+\sum_{k=1}^{n} \frac{n}{\gcd(k,n)}
+= 2 \sum_{k=1}^{n} \gcd(k,n) - 1, \quad \text{for } n > 1
+\]
+
+\[
+\sum_{i=1}^{n} \sum_{j=1}^{n} [\,\gcd(i,j)=1\,]
+= \sum_{d=1}^{n} \mu(d) \left\lfloor \frac{n}{d} \right\rfloor^2
+= 2 \sum_{i=1}^{n} \varphi(i) - 1
+\]
+
+\[
+\sum_{i=1}^{n} \sum_{j=1}^{n} \gcd(i,j)
+= \sum_{d=1}^{n} \varphi(d) \left\lfloor \frac{n}{d} \right\rfloor^2
+\]
+
+\[
+\sum_{i=1}^{n} \sum_{j=1}^{n} i \cdot j \, [\, \gcd(i,j)=1 \,]
+= \sum_{d=1}^{n} \mu(d) \cdot d^2 \left( \frac{\lfloor n/d \rfloor (\lfloor n/d \rfloor + 1)}{2} \right)^2
+\]
+
+\[
+\sum_{i=1}^{n} \sum_{j=1}^{n} \operatorname{lcm}(i,j)
+= \sum_{d=1}^{n} d \sum_{k=1}^{\lfloor n/d \rfloor} \mu(k) \cdot k^2 \left( \frac{\lfloor \frac{n}{d \cdot k} \rfloor (\lfloor \frac{n}{d \cdot k} \rfloor + 1)}{2} \right)^2
+\]
+
+% ==========================================
+% Dirichlet Convolutions & Mobius Inversion
+% ==========================================
+
+\[
+\sum_{d \mid n} \mu(d) = [\,n=1\,]
+\]
+
+\[
+\sum_{d \mid n} \varphi(d) = n
+\]
+
+\[
+\sum_{d \mid n} \mu(d) \frac{n}{d} = \varphi(n)
+\]
+
+\[
+g(n) = \sum_{d \mid n} f(d) \iff f(n) = \sum_{d \mid n} \mu(d) g\!\left(\frac{n}{d}\right)
+\]
+
+\[
+g(n) = \sum_{k=1}^{\lfloor M/n \rfloor} f(k \cdot n) \iff f(n) = \sum_{k=1}^{\lfloor M/n \rfloor} \mu(k) g(k \cdot n)
+\]
+
+% ==========================================
+% 1D Sums & Asymmetric 2D Sums
+% ==========================================
+
+\[
+\sum_{i=1}^{n} \gcd(i,n) = \sum_{d \mid n} d \cdot \varphi\!\left(\frac{n}{d}\right)
+\]
+
+\[
+\sum_{i=1}^{n} \operatorname{lcm}(i,n) = \frac{n}{2} \left( \sum_{d \mid n} d \cdot \varphi(d) + 1 \right)
+\]
+
+\[
+\sum_{i=1}^{n} \sum_{j=1}^{m} [\,\gcd(i,j)=1\,] 
+= \sum_{d=1}^{\min(n,m)} \mu(d) \left\lfloor \frac{n}{d} \right\rfloor \left\lfloor \frac{m}{d} \right\rfloor
+\]
+
+\[
+\sum_{i=1}^{n} \sum_{j=1}^{m} \gcd(i,j) 
+= \sum_{d=1}^{\min(n,m)} \varphi(d) \left\lfloor \frac{n}{d} \right\rfloor \left\lfloor \frac{m}{d} \right\rfloor
+\]
+
+% ==========================================
+% Combinatorics (Legendre & Lucas)
+% ==========================================
+
+\[
+v_p(n!) = \sum_{k=1}^{\infty} \left\lfloor \frac{n}{p^k} \right\rfloor
+\]
+
+\[
+\binom{n}{k} \equiv \prod_{i=0}^{r} \binom{n_i}{k_i} \pmod{p}
+\]

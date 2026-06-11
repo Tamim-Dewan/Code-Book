@@ -1,0 +1,37 @@
+\begin{itemize}
+  \item $\displaystyle \sum_{k=0}^{n} \binom{n-k}{k} = \text{Fib}_{n+1}$
+  \item $\displaystyle \binom{n}{k} = \binom{n}{n-k}$
+  \item $\displaystyle \binom{n}{k} + \binom{n}{k+1} = \binom{n+1}{k+1}$
+  \item $\displaystyle k \binom{n}{k} = n \binom{n-1}{k-1}$
+  \item $\displaystyle \binom{n}{k} = \frac{n}{k} \binom{n-1}{k-1}$
+  \item $\displaystyle \sum_{i=0}^{n} \binom{n}{i} = 2^n$
+  \item $\displaystyle \sum_{i=0}^{\lfloor n/2 \rfloor} \binom{n}{2i} = 2^{n-1}$
+  \item $\displaystyle \sum_{i=0}^{\lfloor (n-1)/2 \rfloor} \binom{n}{2i+1} = 2^{n-1}$
+  \item $\displaystyle \sum_{i=0}^{k} (-1)^i \binom{n}{i} = (-1)^k \binom{n-1}{k}$
+  \item $\displaystyle \sum_{i=0}^{k} \binom{n+i}{i} = \binom{n+k+1}{k}$
+  \item $\displaystyle \sum_{i=1}^{n} i \binom{n}{i} = n \cdot 2^{n-1}$
+  \item $\displaystyle \sum_{i=1}^{n} i^2 \binom{n}{i} = (n + n^2) \cdot 2^{n-2}$
+  \item Vandermonde's Identity: $\displaystyle \sum_{k=0}^{r} \binom{m}{k} \binom{n}{r-k} = \binom{m+n}{r}$
+  \item Hockey-Stick Identity: $\displaystyle \sum_{i=r}^{n} \binom{i}{r} = \binom{n+1}{r+1}$
+  \item $\displaystyle \sum_{i=0}^{k} \binom{k}{i}^2 = \binom{2k}{k}$
+  \item $\displaystyle \sum_{k=0}^{n} \binom{n}{k} \binom{n}{n-k} = \binom{2n}{n}$
+  \item $\displaystyle \sum_{k=q}^{n} \binom{n}{k} \binom{k}{q} = 2^{n-q} \binom{n}{q}$
+  \item $\displaystyle \sum_{i=0}^{n} k^i \binom{n}{i} = (k+1)^n$
+  \item $\displaystyle \sum_{i=0}^{n} \binom{2n}{i} = 2^{2n-1} + \frac{1}{2} \binom{2n}{n}$
+  \item $\displaystyle \sum_{i=1}^{n} \binom{n}{i} \binom{n-1}{i-1} = \binom{2n-1}{n-1}$
+  \item $\displaystyle \sum_{i=0}^{n} \binom{2n}{i}^2 = \frac{1}{2} \left( \binom{4n}{2n} + \binom{2n}{n}^2 \right)$
+  \item Catalan Number: $\displaystyle C_n = \frac{1}{n+1} \binom{2n}{n}$
+  \item Derangement: $d(n) = (n-1) \cdot (d(n-1) + d(n-2))$, with $d(0) = 1$, $d(1) = 0$
+  \item Stirling Numbers of the First Kind: $s(n,k) = s(n-1,k-1) + (n-1) \cdot s(n-1,k)$
+  \item Stirling Numbers of the Second Kind: $S(n,k) = S(n-1,k-1) + k \cdot S(n-1,k)$
+  \item Bell Numbers: $B_{n+1} = \sum_{k=0}^{n} \binom{n}{k} B_k$
+  \item $\displaystyle \sum_{i=0}^{n} i \cdot i! = (n+1)! - 1$
+  \item $\displaystyle \sum_{i=1}^{n} i a^i = \frac{a (n a^{n+1} - (n+1) a^n + 1)}{(a - 1)^2}$
+  \item Fibonacci: $F_0 = 0$, $F_1 = 1$, $F_n = F_{n-1} + F_{n-2}$
+  \item $\displaystyle F_n = \sum_{k=0}^{\lfloor (n-1)/2 \rfloor} \binom{n-k-1}{k}$
+  \item $\displaystyle F_n = \frac{1}{\sqrt{5}} \left( \left( \frac{1+\sqrt{5}}{2} \right)^n - \left( \frac{1-\sqrt{5}}{2} \right)^n \right)$
+  \item $\displaystyle \sum_{i=1}^{n} F_i = F_{n+2} - 1$
+  \item $\displaystyle \sum_{i=0}^{n-1} F_{2i+1} = F_{2n}$
+  \item $\displaystyle \sum_{i=1}^{n} F_{2i} = F_{2n+1} - 1$
+  \item \textbf{Pick's Theorem:} For a simple polygon with vertices on lattice points, $A = I + \frac{B}{2} - 1$ where $A$ is area, $I$ is number of interior lattice points, and $B$ is number of boundary lattice points.
+\end{itemize}
